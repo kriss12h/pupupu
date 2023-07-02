@@ -1,0 +1,43 @@
+from tkinter import *
+ort random
+
+window = Tk()
+window.geometry('600x600')
+
+
+class Fire:
+    imagePhotoImage(file='elements/free-icon-fire-9509865.png').subsample(4, 4)
+
+class Water:
+    image =hotoImage(file='elements/free-icon-water-drop-4246703.png').subsample(4, 4)
+
+class Earth:
+    imagehotoImage(file='elements/ground.png').subsample(4, 4)
+
+class Wind:
+    image toImage(file='elements/wind.png').subsample(4, 4)
+
+
+canvas = Canvas(window, width=600, height=600)
+canvas.pack()
+
+elements = [Fire(), Water(), Earth(), Wind()]
+
+for elem in elements:
+    img = canvas.create_image(random.randint(50, 550), random.randint(50, 550), image=elem.image)
+
+другой код
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @property
+    def name(self):
+        return self.__name
+
+    @name.setter
+    def name(selfm, name):
+        selfm.__name = name
+
+    @
